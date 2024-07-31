@@ -1,0 +1,25 @@
+
+<div class="container mt-4">
+    <div class="card"><form>
+<h1>Login Here</h1>
+   
+     <div class="form-group">
+        <label>UserName</label>
+        <input type="text" [(ngModel)]="uname"  [ngModelOptions]="{standalone:true}" id="Uname" class="form-control" placeholder="Enter User Name">
+       </div>
+
+
+       <div class="form-group">
+        <label>Password</label>
+        <input type="password"[(ngModel)]="password"  [ngModelOptions]="{standalone:true}" id="password" class="form-control" placeholder="Enter Password">
+       </div>
+
+
+    <button type="submit" class="btn btn-primary" (click)="Login()">Login </button>
+&nbsp;&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary" (click)="reg()">Register </button>
+    &nbsp;&nbsp;&nbsp;
+  <!-- <button class="btn btn-primary"> <a href="http://localhost:4200/register">Register</a> </button>  -->
+  </form>
+</div>
+</div>

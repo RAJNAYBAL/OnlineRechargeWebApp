@@ -1,0 +1,43 @@
+
+<div class="container mt-4">
+    <div class="card"><form>
+<h1>Recharge Here</h1>
+    <div class="form-group">
+      <label>Contact Number</label>
+      <input type="text" [(ngModel)]="MobileNum" [ngModelOptions]="{standalone:true}" id="empname" class="form-control" placeholder="Enter Phone Number">
+     </div>
+
+     <div class="form-group">
+        <label>Sim</label>
+  <!-- <input type="text" [(ngModel)]="sim"  [ngModelOptions]="{standalone:true}" id="Uname" class="form-control" placeholder="select Sim"> -->
+        <select id="options" name="options"  [(ngModel)]="sim"  [ngModelOptions]="{standalone:true}" id="Uname" class="form-control" placeholder="select Sim">
+            <option value="JIO">JIO</option>
+            <option value="BSNL">BSNL</option>
+            <option value="VI">VI</option>
+            <option value="TATA DOC">TATA DOC</option>
+          </select>
+          
+    </div>
+
+
+       <div class="form-group">
+        <label>Ammount</label>
+        <!-- <input type="number"[(ngModel)]="ammount"  [ngModelOptions]="{standalone:true}" id="password" class="form-control" placeholder="Select Ammount"> -->
+        <select id="options" name="options"  [(ngModel)]="price"   [ngModelOptions]="{standalone:true}" id="password" class="form-control" placeholder="Select Ammount">
+            <option value="300">300</option>
+            <option value="500">500</option>
+            <option value="1500">1500</option>
+            <option value="4999">4999</option>
+          </select> 
+    
+    </div>
+
+       <div class="form-group">
+        <label>Acc number</label>
+        <input type="text"[(ngModel)]="AccNum"  [ngModelOptions]="{standalone:true}" id="balance" class="form-control" placeholder="Enter Account number">
+       </div>
+  
+    <button type="submit" class="btn btn-primary" (click)="Recharge()">Register </button>
+  </form>
+</div>
+</div>
